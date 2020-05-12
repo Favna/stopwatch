@@ -1,4 +1,5 @@
 import ava from 'ava';
-import Stopwatch from '../dist';
 
-//... others
+ava('tests soon', (test): void => {
+	test.is('foo', 'foo');
+});
