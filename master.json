@@ -7,16 +7,557 @@
 	"children": [
 		{
 			"id": 1,
-			"name": "\"index\"",
+			"name": "\"src/index\"",
 			"kind": 1,
 			"kindString": "Module",
 			"flags": {
 				"isExported": true
 			},
 			"originalName": "/home/runner/work/stopwatch/stopwatch/src/index.ts",
+			"children": [
+				{
+					"id": 2,
+					"name": "Stopwatch",
+					"kind": 128,
+					"kindString": "Class",
+					"flags": {
+						"isExported": true
+					},
+					"comment": {
+						"shortText": "Klasa's Stopwatch class, uses native node to replicate/extend performance now dependency."
+					},
+					"children": [
+						{
+							"id": 6,
+							"name": "constructor",
+							"kind": 512,
+							"kindString": "Constructor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "Starts a new stopwatch"
+							},
+							"signatures": [
+								{
+									"id": 7,
+									"name": "new Stopwatch",
+									"kind": 16384,
+									"kindString": "Constructor signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Starts a new stopwatch"
+									},
+									"parameters": [
+										{
+											"id": 8,
+											"name": "digits",
+											"kind": 32768,
+											"kindString": "Parameter",
+											"flags": {
+												"isExported": true
+											},
+											"type": {
+												"type": "intrinsic",
+												"name": "number"
+											},
+											"defaultValue": "2"
+										}
+									],
+									"type": {
+										"type": "reference",
+										"id": 2,
+										"name": "Stopwatch"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 21,
+									"character": 29
+								}
+							]
+						},
+						{
+							"id": 5,
+							"name": "_end",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The end time of this stopwatch"
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 21,
+									"character": 13
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "number"
+									},
+									{
+										"type": "intrinsic",
+										"name": "null"
+									}
+								]
+							}
+						},
+						{
+							"id": 4,
+							"name": "_start",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPrivate": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The start time of this stopwatch"
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 16,
+									"character": 15
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 3,
+							"name": "digits",
+							"kind": 1024,
+							"kindString": "Property",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The number of digits to appear after the decimal point when returning the friendly duration."
+							},
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 11,
+									"character": 14
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "number"
+							}
+						},
+						{
+							"id": 9,
+							"name": "duration",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "The duration of this stopwatch since start or start to end if this stopwatch has stopped."
+							},
+							"getSignature": [
+								{
+									"id": 10,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "The duration of this stopwatch since start or start to end if this stopwatch has stopped."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "number"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 35,
+									"character": 20
+								}
+							]
+						},
+						{
+							"id": 11,
+							"name": "running",
+							"kind": 262144,
+							"kindString": "Accessor",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"comment": {
+								"shortText": "If the stopwatch is running or not."
+							},
+							"getSignature": [
+								{
+									"id": 12,
+									"name": "__get",
+									"kind": 524288,
+									"kindString": "Get signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "If the stopwatch is running or not."
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "boolean"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 42,
+									"character": 19
+								}
+							]
+						},
+						{
+							"id": 15,
+							"name": "reset",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 16,
+									"name": "reset",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Resets the Stopwatch to 0 duration (Returns a stopped state)"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 58,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 13,
+							"name": "restart",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 14,
+									"name": "restart",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Restarts the stopwatch (Returns a running state)"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 49,
+									"character": 15
+								}
+							]
+						},
+						{
+							"id": 17,
+							"name": "start",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 18,
+									"name": "start",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Starts the Stopwatch"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 67,
+									"character": 13
+								}
+							]
+						},
+						{
+							"id": 19,
+							"name": "stop",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 20,
+									"name": "stop",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Stops the Stopwatch, freezing the duration"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "this"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 79,
+									"character": 12
+								}
+							]
+						},
+						{
+							"id": 21,
+							"name": "toString",
+							"kind": 2048,
+							"kindString": "Method",
+							"flags": {
+								"isPublic": true,
+								"isExported": true
+							},
+							"signatures": [
+								{
+									"id": 22,
+									"name": "toString",
+									"kind": 4096,
+									"kindString": "Call signature",
+									"flags": {
+										"isExported": true
+									},
+									"comment": {
+										"shortText": "Defines toString behavior"
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "string"
+									}
+								}
+							],
+							"sources": [
+								{
+									"fileName": "src/index.ts",
+									"line": 87,
+									"character": 16
+								}
+							]
+						}
+					],
+					"groups": [
+						{
+							"title": "Constructors",
+							"kind": 512,
+							"children": [
+								6
+							]
+						},
+						{
+							"title": "Properties",
+							"kind": 1024,
+							"children": [
+								5,
+								4,
+								3
+							]
+						},
+						{
+							"title": "Accessors",
+							"kind": 262144,
+							"children": [
+								9,
+								11
+							]
+						},
+						{
+							"title": "Methods",
+							"kind": 2048,
+							"children": [
+								15,
+								13,
+								17,
+								19,
+								21
+							]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "src/index.ts",
+							"line": 6,
+							"character": 22
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Classes",
+					"kind": 128,
+					"children": [
+						2
+					]
+				}
+			],
 			"sources": [
 				{
-					"fileName": "index.ts",
+					"fileName": "src/index.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 23,
+			"name": "\"test/chainables\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/stopwatch/stopwatch/test/chainables.ts",
+			"sources": [
+				{
+					"fileName": "test/chainables.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 24,
+			"name": "\"test/duration\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/stopwatch/stopwatch/test/duration.ts",
+			"sources": [
+				{
+					"fileName": "test/duration.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 25,
+			"name": "\"test/running\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/stopwatch/stopwatch/test/running.ts",
+			"sources": [
+				{
+					"fileName": "test/running.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 26,
+			"name": "\"test/stop-accuracy\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/stopwatch/stopwatch/test/stop-accuracy.ts",
+			"sources": [
+				{
+					"fileName": "test/stop-accuracy.ts",
+					"line": 1,
+					"character": 0
+				}
+			]
+		},
+		{
+			"id": 27,
+			"name": "\"test/toString\"",
+			"kind": 1,
+			"kindString": "Module",
+			"flags": {
+				"isExported": true
+			},
+			"originalName": "/home/runner/work/stopwatch/stopwatch/test/toString.ts",
+			"sources": [
+				{
+					"fileName": "test/toString.ts",
 					"line": 1,
 					"character": 0
 				}
@@ -28,7 +569,12 @@
 			"title": "Modules",
 			"kind": 1,
 			"children": [
-				1
+				1,
+				23,
+				24,
+				25,
+				26,
+				27
 			]
 		}
 	]
