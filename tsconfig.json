@@ -8,10 +8,10 @@
 		"outDir": "./dist",
 		"sourceMap": true,
 		"types": ["node"],
-        "declaration": true,
-        "noUnusedLocals": true,
-        "removeComments": false,
-        "target": "esnext"
+		"declaration": true,
+		"noUnusedLocals": true,
+		"removeComments": false,
+		"target": "esnext"
 	},
 	"exclude": [
 		"node_modules",
@@ -20,6 +20,7 @@
 		"scripts"
 	],
 	"include": [
-		"./src/**/*"
+		"./src/**/*",
+		"./test/**/*"
 	]
 }
